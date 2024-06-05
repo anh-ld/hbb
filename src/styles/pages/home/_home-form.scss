@@ -1,0 +1,23 @@
+.home-form {
+  background: radial-gradient(104.34% 79.51% at 67.12% 100%, #ffbd37 0%, #e73b7c 44.79%, #234366 100%);
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  .home-form__rect {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 3.75rem;
+    height: auto;
+    bottom: -1.5%;
+  }
+
+  @screen lg {
+    .home-form__rect {
+      width: 12rem;
+      bottom: -3.5%;
+    }
+  }
+}

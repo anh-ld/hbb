@@ -1,0 +1,57 @@
+.product-about {
+  .product-about__card {
+		position: relative;
+		background: linear-gradient(
+			180deg,
+			var(--yellow-accent) 57.52%,
+			rgb(255 189 55 / 0%) 105%
+		);
+		padding: 73px 20px;
+
+    @screen sm {
+      padding: 40px 34px 140px;
+			background: linear-gradient(
+				180deg,
+				var(--yellow-accent) 57.52%,
+				rgb(255 189 55 / 0%) 99.05%
+			);
+    }
+
+		@screen md {
+			padding: 20px 32px 160px;
+		}
+
+		@screen 2xl {
+			padding: 55px;
+		}
+	}
+
+  .product-about__clouds {
+    & svg:nth-of-type(1) {
+      position: absolute;
+      bottom: 0%;
+      left: 3%;
+      width: 350px;
+      height: auto;
+
+      @screen 2xl {
+        width: auto;
+        bottom: -15%;
+        left: 0;
+      }
+    }
+
+    & svg:nth-of-type(2) {
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      width: 360px;
+      height: auto;
+
+      @screen 2xl {
+        width: auto;
+        bottom: -15%;
+      }
+    }
+  }
+}

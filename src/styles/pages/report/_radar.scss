@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+  .report-chart-radar:not(.report-chart-radar-preview) {
+    width: 100vw;
+    height: 400px;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .report-chart-radar:not(.report-chart-radar-preview) {
+    width: 80vw;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .report-chart-radar:not(.report-chart-radar-preview) {
+    width: 60vw;
+    height: 750px;
+    max-width: 100%;
+  }
+}
+
+.report-chart-radar-preview {
+  max-width: 100%;
+  width: 600px;
+  height: 600px;
+}

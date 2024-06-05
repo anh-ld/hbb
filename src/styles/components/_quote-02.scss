@@ -1,0 +1,24 @@
+.quote-02__images {
+  & > img:nth-child(1) {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    height: auto;
+  }
+
+  & > img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: -5rem;
+    height: auto;
+  }
+  
+}
+
+.quote-02__paragraph {
+  & .quote-02__paragraph-icon {
+    display: inline-flex;
+    vertical-align: middle;
+    @apply text-yellow-accent;
+  }
+}

@@ -1,0 +1,7 @@
+.home-hero {
+  background: linear-gradient(359deg,var(--foundation-cream) 1.03%,rgba(255,248,231,0) 26.76%),radial-gradient(91.79% 100% at 50.01% 100%,var(--foundation-cream) 11.08%,var(--yellow-pastel) 20.82%,var(--orange-accent) 32.95%,var(--pink-accent) 51.24%,var(--blue-strong) 94.25%);
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+}

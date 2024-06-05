@@ -1,0 +1,58 @@
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base */
+@import "src/styles/typography";
+@import "src/styles/color";
+@import "src/styles/animation";
+@import "src/styles/utility";
+@import "src/styles/global";
+
+/* elements */
+@import "src/styles/elements/button";
+@import "src/styles/elements/input";
+@import "src/styles/elements/select";
+@import "src/styles/elements/accordion";
+
+/* shared components */
+@import "src/styles/components/header";
+@import "src/styles/components/newsletter";
+@import "src/styles/components/mixed-media";
+@import "src/styles/components/quote-01";
+@import "src/styles/components/quote-02";
+@import "src/styles/components/info-popup";
+@import "src/styles/components/payment-list";
+
+/* page home components */
+@import "src/styles/pages/home/home-form";
+@import "src/styles/pages/home/home-service-section";
+@import "src/styles/pages/home/home-hero";
+
+/* page product components */
+@import "src/styles/pages/product/product-hero";
+@import "src/styles/pages/product/product-about";
+@import "src/styles/pages/product/product-faq";
+@import "src/styles/pages/product/product-feature-service";
+
+/* page about components */
+@import "src/styles/pages/about/about-hero";
+@import "src/styles/pages/about/about-video";
+
+/* page major star components */
+@import "src/styles/pages/major-stars/major-stars-hero";
+@import "src/styles/pages/major-stars/major-stars-star";
+
+/* page blog components, REFACTOR LATER */
+@import "src/styles/pages/blog/blog";
+
+/* page cast components */
+@import "src/styles/pages/cast/cast-info";
+
+/* page report components */
+@import "src/styles/pages/report/epilogue";
+@import "src/styles/pages/report/hero";
+@import "src/styles/pages/report/line";
+@import "src/styles/pages/report/radar";
+@import "src/styles/pages/report/feedback";

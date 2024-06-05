@@ -1,0 +1,35 @@
+html {
+  overflow-x: hidden
+}
+
+body, html {
+  color: var(--blue-strong);
+}
+
+.boxed {
+	@apply max-w-[1440px] mx-auto px-4 md:px-[60px] relative;
+}
+
+.boxed-top {
+  @apply pt-[80px];
+}
+
+.mkt-section {
+	@apply relative py-[48px] md:py-[80px] 2xl:py-[120px];
+}
+
+.report-section {
+  @apply relative py-[20px] sm:py-[40px] 2xl:py-[60px] overflow-hidden;
+}
+
+.as-bg {
+  @apply absolute z-0 top-[0] left-[0] h-full w-full object-cover;
+}
+
+.svg-icon {
+  @apply inline-block;
+
+  & svg {
+    @apply w-full h-full;
+  }
+}

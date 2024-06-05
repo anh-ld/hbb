@@ -1,0 +1,23 @@
+.major-stars-star {
+  .major-star__hero {
+    background: linear-gradient(var(--accent-1) 60%, var(--light-2) 100%);
+  }
+
+  .major-star__major-star-bright {
+    width: 600px;
+    height: 600px;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    max-width: initial;
+    position: absolute;
+  }
+
+  .major-star__major-star-halo {
+    max-width: initial;
+    position: absolute;
+    width: 1200px;
+    top: calc(50% - 600px);
+    left: calc(50% - 600px);
+  }
+
+}

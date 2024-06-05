@@ -1,0 +1,27 @@
+.cast-info {
+  @apply max-w-[1440px] mx-auto px-0 xl:px-[60px] relative;
+
+  .cast-info__card::after {
+    background: radial-gradient(20px at 30px 30px, var(--light-2) 98%, var(--light-1)) -30px -30px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cast-info__sidebar-image {
+    width: 120px;
+    height: 120px;
+    color: var(--accent-1);
+
+    &:nth-of-type(1) {
+      background: linear-gradient(140deg, var(--accent-2) 70.62%, rgba(232, 59, 125, 0) 90.41%);
+    }
+
+    &:nth-of-type(2) {
+      background: linear-gradient(-40deg, var(--accent-2) 70.62%, rgba(232, 59, 125, 0) 80.41%);
+    }
+  }
+}

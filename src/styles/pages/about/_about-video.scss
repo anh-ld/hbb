@@ -1,0 +1,16 @@
+.about-video {
+  position: relative;
+	background: linear-gradient(
+			179deg,
+			var(--foundation-cream) 1.07%,
+			rgb(255 248 231 / 0%) 27.15%
+		),
+		radial-gradient(
+			109.57% 103.54% at 50% 0%,
+			var(--foundation-cream) 11.08%,
+			var(--yellow-pastel) 20.82%,
+			var(--orange-accent) 38.22%,
+			var(--pink-accent) 56.41%,
+			var(--blue-strong) 94.25%
+		);
+}

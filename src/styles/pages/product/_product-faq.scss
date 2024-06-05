@@ -1,0 +1,17 @@
+.product-faq__square {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  width: 192px;
+  height: 315px;
+
+  @screen sm {
+    width: 264px;
+    height: 433px;
+  }
+
+  @screen lg {
+    width: 236px;
+    height: 388px;
+  }
+}

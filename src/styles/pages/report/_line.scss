@@ -1,0 +1,84 @@
+.report-line {
+  .apexcharts-grid-borders {
+    display: none;
+  }
+  .apexcharts-gridlines-horizontal > *:first-child,
+  .apexcharts-gridlines-horizontal > *:last-child {
+    display: none;
+  }
+  #chart1 .apexcharts-marker {
+    filter: drop-shadow(2px 2px 4px #ffebcd) drop-shadow(-2px -2px 4px #ffebcd) !important;
+  }
+
+  .section-chart > div {
+    width: 100%;
+  }
+  .heading-area {
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0px 10px;
+  }
+  .heading-area,
+  .heading-area .buttons {
+    display: flex;
+    align-items: center;
+  }
+  .heading-area .buttons {
+    gap: 10px;
+  }
+  .first-area .heading-area h1 {
+    color: #9e3c24;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  .heading-area button {
+    height: 40px;
+    padding: 0px 15px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+  }
+  .first-area .heading-area .buttons button:first-child {
+    background: linear-gradient(to bottom, #e46427, #e46427, #fa8e41, #febc6f);
+    color: #fff8e8;
+  }
+
+  .first-area .heading-area .buttons button:nth-child(2) {
+    background: linear-gradient(to bottom, #ff95ae, #ffcc81, #ffedda);
+    color: #931505;
+  }
+  .first-area .heading-area .buttons button:nth-child(3) {
+    background: linear-gradient(to bottom, #5a597c, #d37498, #f3d0de);
+    color: #ffebf0;
+  }
+
+  .second-area .heading-area h1 {
+    color: #23456a;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  .second-area .heading-area .buttons button:first-child {
+    background: linear-gradient(to bottom, #77beb6, #28928e, #176172, #1e516d);
+    color: #ffffff;
+  }
+
+  .second-area .heading-area .buttons button:nth-child(2) {
+    background: linear-gradient(to bottom, #f3f9f9, #96c9c6, #65b1ad);
+    color: #fff;
+  }
+  .second-area .heading-area .buttons button:nth-child(3) {
+    background: linear-gradient(
+      to bottom,
+      #525b80,
+      #7399c5,
+      #b3c9e1,
+      #b3c9e1,
+      #fff
+    );
+    color: #ffebf0;
+  }
+  #chart2 .apexcharts-marker {
+    filter: drop-shadow(2px 2px 4px #e3f9f2) drop-shadow(-2px -2px 4px #e3f9f2) !important;
+  }
+
+}

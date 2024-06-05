@@ -1,0 +1,39 @@
+.navigation__hamburger,
+.navigation__hamburger::before,
+.navigation__hamburger::after {
+  display: block;
+  background-color: currentColor;
+  position: absolute;
+  height: 2px;
+  width: 16px;
+  // transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.navigation__hamburger::before {
+  content: '';
+  margin-top: -6px;
+}
+
+.navigation__hamburger::after {
+  content: '';
+  margin-top: 6px;
+}
+
+#navigation__hamburger-checkbox:checked + label .navigation__hamburger::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#navigation__hamburger-checkbox:checked + label .navigation__hamburger {
+  background: rgba(255, 255, 255, 0);
+}
+
+#navigation__hamburger-checkbox:checked + label .navigation__hamburger::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+#navigation__hamburger-checkbox:checked ~ ul {
+	display: flex !important;
+	
+}

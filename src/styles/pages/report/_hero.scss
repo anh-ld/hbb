@@ -1,0 +1,65 @@
+.report-hero {
+  text-align: center;
+  overflow: hidden;
+	position: relative;
+  background: radial-gradient(
+			37.65% 30.44% at 50% 88.5%,
+			var(--light-2) 0%,
+			rgb(255 248 231 / 0%) 100%
+		),
+		radial-gradient(
+			679.35% 99.61% at 50% 99.61%,
+			var(--light-2) 0%,
+			var(--accent-1) 43%,
+			var(--accent-2) 91.89%
+		);
+  height: clamp(560px, 130px + 57.6149425287vw, 60rem);
+
+  .report-hero__clouds {
+    @apply w-full max-w-[2560px] h-full absolute left-2/4 -translate-x-1/2 pointer-events-none object-none object-top -bottom-[15%];
+  }
+
+  .report-hero__star {
+    display: block;
+    height: 320px;
+    fill: var(--accent-1);
+    color: var(--accent-1);
+  }
+
+  @screen md {
+    .report-hero__star {
+      height: 500px;
+    }
+  }
+
+  @screen lg {
+    .report-hero__clouds {
+      @apply -bottom-[45%];
+    }
+
+    .report-hero__star {
+      height: 800px;
+    }
+  }
+
+  @screen 2xl {
+    .report-hero__star {
+      transform: translateY(82px);
+    }
+  }
+}
+
+.wood .report-hero__clouds {
+  filter: sepia(92%) saturate(458%) hue-rotate(177deg)
+    brightness(102%) contrast(101%);
+}
+
+.water .report-hero__clouds {
+  filter: sepia(92%) saturate(458%) hue-rotate(177deg)
+    brightness(102%) contrast(101%);
+}
+
+.fire .report-hero__clouds {
+  filter: sepia(94%) saturate(192%) hue-rotate(285deg) brightness(97%)
+    contrast(110%);
+}

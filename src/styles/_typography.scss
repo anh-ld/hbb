@@ -1,0 +1,52 @@
+/* typography */
+.big {
+  @apply font-grotesk font-extrabold -tracking-[0.02em] leading-[1.2] text-[48px] lg:text-[100px];
+}
+
+.h1, .blog-article h1 {
+  @apply font-grotesk font-extrabold -tracking-[0.02em] leading-[1.2] text-[39px] lg:text-[64px];
+}
+
+.h2, .blog-article h2 {
+  @apply font-grotesk font-extrabold -tracking-[0.01em] leading-[1.2] text-[35px] lg:text-[56px];
+}
+
+.h3, .blog-article h3 {
+  @apply font-grotesk font-extrabold -tracking-[0.01em] leading-[1.2] text-[30px] lg:text-[48px];
+}
+
+.h4, .blog-article h4 {
+  @apply font-grotesk font-extrabold -tracking-[0.01em] leading-[1.2] text-[25px] lg:text-[32px];
+}
+
+.h5, .blog-article h5 {
+  @apply font-grotesk font-extrabold -tracking-[0.01em] leading-[1.2] text-[22px] lg:text-[24px];
+}
+
+.h6, .blog-article h6 {
+  @apply font-grotesk font-extrabold -tracking-[0.01em] leading-[1.2] text-[18px] lg:text-[20px];
+}
+
+.subheader {
+  @apply font-grotesk font-extrabold capitalize tracking-[0.15em] leading-[1.2] text-[18px] lg:text-[20px];
+}
+
+.paragraph-large {
+  @apply font-epilogue font-normal tracking-normal leading-[1.4] text-[20px] lg:text-[24px];
+}
+
+.paragraph-medium {
+  @apply font-epilogue font-normal tracking-normal leading-[1.4] text-[18px] lg:text-[20px];
+}
+
+.paragraph-small {
+  @apply font-epilogue font-normal tracking-normal leading-[1.4] text-[16px];
+}
+
+.paragraph-extra-small {
+  @apply font-epilogue font-normal tracking-normal leading-[1.4] text-[13px];
+}
+
+.text {
+  @apply font-epilogue font-medium tracking-normal leading-[1.2] text-[14px];
+}

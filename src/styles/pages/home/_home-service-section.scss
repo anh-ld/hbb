@@ -1,0 +1,25 @@
+.home-service-section {
+  .home-service-section__services {
+    min-height: 20rem;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @apply text-foundation-cream;
+
+    .home-service-section__description {
+      background: linear-gradient(359deg, var(--bg) 78.62%, rgba(232, 59, 125, 0) 99.41%);
+    }
+
+    &:nth-of-type(1) {
+      @apply bg-pink-accent;
+    }
+
+    &:nth-of-type(2) {
+      @apply bg-orange-strong;
+    }
+
+    &:nth-of-type(3) {
+      @apply bg-blue-strong;
+    }
+  }
+}

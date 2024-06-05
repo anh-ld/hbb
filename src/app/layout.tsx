@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import cn from 'classnames'
 import "./globals.css";
+import "@/styles/index.scss";
+import { Epilogue, Space_Grotesk } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  style: ["normal"],
+  display: "swap",
+  weight: ["400", "500", "700"],
+  variable: "--font-grotesk",
+});
+
+const epilogue = Epilogue({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  display: "swap",
+  weight: ["400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="vi" className={cn(spaceGrotesk.variable, epilogue.className, "h-full")}>
+      <body>{children}</body>
     </html>
   );
 }

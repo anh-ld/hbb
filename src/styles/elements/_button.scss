@@ -1,0 +1,60 @@
+.element-button {
+  background-color: var(--bg);
+  @include mask-corner(10px, 20px, 20px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    @include cut-corner-x(0px, 10px, 20px, 20px);
+  }
+
+  &:hover {
+    box-shadow: 0 0 21px 0 #fff;
+    mask: none;
+  }
+}
+
+@screen lg {
+  .element-button--large, .element-button--medium {
+    @include mask-corner(15px, 30px, 30px);
+
+    &::after {
+      @include cut-corner-x(0px, 15px, 30px, 30px);
+    }
+  }
+}
+
+.element-button-outline {
+  background: radial-gradient(19px at 30px 30px, #0000 80%, var(--bg) 98%, #0000) -30px -30px;
+  mask: 
+     radial-gradient(circle at left top, transparent 19px, black 0px),
+     radial-gradient(circle at right top, transparent 19px, black 0px),
+     radial-gradient(circle at left bottom, transparent 19px, black 0px),
+     radial-gradient(circle at right bottom, transparent 19px, black 0px),
+     linear-gradient(black,black); 
+  -webkit-mask-composite: destination-in;
+  mask-composite: exclude; /* for non-webkit browser */
+  border: 2px solid var(--bg);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  z-index: -1;
+
+  &:hover {
+    box-shadow: 0 0 21px 0 #fff;
+
+    &::after {
+      transform: scale(1.5);
+      background: radial-gradient(19px at 30px 30px, #0000 80%, var(--bg) 98%, var(--bg)) -30px -30px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.report-feedback {
+  .report-feedback__rating-star {
+    & label:hover,
+    & label:hover ~ label,
+    & input:checked ~ label {
+      color: var(--accent-1);
+    }
+  }
+}

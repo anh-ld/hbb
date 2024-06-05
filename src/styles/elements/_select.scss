@@ -1,0 +1,53 @@
+.element-select {
+  @apply relative w-full;
+
+  label {
+    @apply inline-block font-medium absolute left-5 -top-[12px] px-[3px] py-1 text-sm;
+  }
+
+  select {
+    @apply rounded-none flex items-end transition-all px-5 py-4 w-full h-full font-medium min-h-[54px];
+
+    box-shadow: inset 0 0 0 1px;
+  
+    &:focus,
+    &:focus-within {
+      box-shadow: inset 0 0 0 1px transparent, 0 0 0 2px;
+      outline: none;
+    }
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			appearance: none;
+			margin: 0;
+		}
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .select-icon {
+    @apply absolute w-4 h-4 top-[50%] flex items-center pointer-events-none -translate-y-[50%];
+  }
+}
+
+.element-select--icon-left {
+  .select-icon--left {
+    @apply left-5
+  }
+
+  select {
+    @apply pl-10
+  }
+}
+
+.element-select--icon-right {
+  .select-icon--right {
+    @apply right-5
+  }
+
+  select {
+    @apply pr-10
+  }
+}

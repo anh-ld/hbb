@@ -1,0 +1,9 @@
+.major-stars-hero {
+  background: linear-gradient(359deg,var(--foundation-cream) 13.74%,var(--blue-accent) 93.48%);
+
+  @apply pt-[56px] md:py-[120px];
+
+  & button {
+    @apply px-8;
+  }
+}

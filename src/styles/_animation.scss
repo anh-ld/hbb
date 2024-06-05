@@ -1,0 +1,16 @@
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.animate-fade-in {
+  animation-name: fade-in;
+	animation-duration: 0.367s;
+	animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+	animation-fill-mode: both;
+}

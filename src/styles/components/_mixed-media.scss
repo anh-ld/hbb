@@ -1,0 +1,15 @@
+.mixed-media--style-01 {
+  @apply bg-yellow-accent;
+
+  svg {
+    @apply text-foundation-cream
+  }
+}
+
+.mixed-media--style-02 {
+  @apply bg-foundation-cream;
+
+  svg {
+    @apply text-yellow-accent
+  }
+}

@@ -1,0 +1,71 @@
+// used only in specific components, value is synced with tailwind.config.js
+:root {
+  --foundation-cream: #FFF8E7;
+  --foundation-dark: #34282C;
+  --foundation-grey: #C7C7C7;
+  --green-strong: #064044;
+  --green-accent: #118780;
+  --green-pastel: #CFF1E4;
+  --blue-strong: #234366;
+  --blue-accent: #3875B8;
+  --blue-pastel: #D3E9F4;
+  --pink-strong: #5D2C4C;
+  --pink-accent: #E73B7C;
+  --pink-pastel: #FFDBE8;
+  --orange-strong: #C44023;
+  --orange-accent: #FD8728;
+  --orange-pastel: #FFD5AE;
+  --yellow-strong: #EF9E00;
+  --yellow-accent: #FFBD37;
+  --yellow-pastel: #F0E1BC;
+}
+
+.metal, .metalElement {
+  --accent-1: #FFBD37;
+  --accent-2: #C44023;
+  --accent-3: #EF9E00;
+  --dark-1: #381C15;
+  --light-1: #F0E1BC;
+  --light-2: #FFF8E7;
+  --halo: '0 0 0 0 1 0 0 0 0 0.741176 0 0 0 0 0.215686 0 0 0 1 0';
+}
+
+.wood, .woodElement {
+  --accent-1: #24A7A0;
+  --accent-2: #1D538F;
+  --accent-3: #078E96;
+  --dark-1: #223132;
+  --light-1: #D5EAE2;
+  --light-2: #F7FBFF;
+  --halo: '0 0 0 0 0.141176 0 0 0 0 0.654902 0 0 0 0 0.627451 0 0 0 1 0';
+}
+
+.water, .waterElement {
+  --accent-1: #408FE6;
+  --accent-2: #442270;
+  --accent-3: #1B69BF;
+  --dark-1: #382D34;
+  --light-1: #D9E5EB;
+  --light-2: #F7FBFF;
+  --halo: '0 0 0 0 0.25098 0 0 0 0 0.560784 0 0 0 0 0.901961 0 0 0 1 0';
+}
+
+.fire, .fireElement {
+  --accent-1: #FF4B8F;
+  --accent-2: #331C73;
+  --accent-3: #D62F6E;
+  --dark-1: #223132;
+  --light-1: #FFDBE8;
+  --light-2: #FFF3F7;
+  --halo: 0 0 0 0 1 0 0 0 0 0.294118 0 0 0 0 0.560784 0 0 0 1 0;
+}
+
+.earth, .earthElement {
+  --accent-1: #FD8728;
+  --accent-2: #00625C;
+  --accent-3: #C44023;
+  --dark-1: #471D14;
+  --light-1: #FFE6CF;
+  --light-2: #FFF8E7;
+  --halo: '0 0 0 0 0.992157 0 0 0 0 0.529412 0 0 0 0 0.156863 0 0 0 1 0';
+}
